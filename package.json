@@ -1,0 +1,24 @@
+{
+  "name": "autumn-tool",
+  "version": "1.0.0",
+  "description": "测试用到的工具，或者为了方面某些工作而写的工具",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Autumn-Seven/Autumn-tool.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Autumn-Seven/Autumn-tool/issues"
+  },
+  "homepage": "https://github.com/Autumn-Seven/Autumn-tool#readme",
+  "dependencies": {
+    "fast-xml-parser": "^3.17.4",
+    "he": "^1.2.0",
+    "xml2js": "^0.4.23"
+  }
+}
