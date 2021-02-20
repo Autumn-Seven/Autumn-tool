@@ -7,7 +7,7 @@
 
 var fs = require("fs");
 var util = require("util");
-var path = "../image/factory2";
+var path = "E:/明度文件/明度招聘/前端20210220";
 
 let Arr = {};
 function explorer(path, fn) {
@@ -75,6 +75,13 @@ function explorer(path, fn) {
 explorer(path);
 
 setTimeout(function () {
+
+
+
+
+
+
+  // 打印 JSON格式
   console.log("{");
   Object.keys(Arr).forEach(function (type) {
     console.log(`	"${type}":{`);
@@ -92,6 +99,24 @@ setTimeout(function () {
   });
 
   console.log("}");
+
+
+
+
+
+  // 打印 字符串格式
+
+  Object.keys(Arr).forEach(function (type) { 
+    let List = Arr[type];
+    List.forEach(function (item) {
+      let index = item.index;
+      let path = (item.path+'').substr(36);
+        path = path.substr(0 ,path.length-4);
+      console.log(
+        `	${path}`
+      );
+    });
+  });
 }, 2000);
 
 // for(let i =1; i<150; i++){
